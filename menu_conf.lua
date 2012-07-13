@@ -57,6 +57,7 @@ mymenu_network = {
 
 mymenu_develop = {
    { "gVim", "gvim", homepath .. "/.config/awesome/themes/icons/apps/gvim.xpm" },
+   { "NetBeans IDE", "wmname LG3D && netbeans-7.1", homepath .. "/.config/awesome/themes/icons/apps/netbeans.png" },
    { "Geany", "geany", homepath .. "/.config/awesome/themes/icons/apps/geany.png" },
    { "Jedit", "jedit", homepath .. "/.config/awesome/themes/icons/apps/jedit.png" },
    { "Eclipse", "~/software/eclipse/./eclipse -vm /usr/lib/jvm/emul-linux-x86-java-1.6/bin/", homepath .. "/.config/awesome/themes/icons/apps/eclipse.png" },
