@@ -29,8 +29,8 @@ urxvtd -q -f -o &
 # xpad &
 wicd-client &
 conky -d -p 5
-kgpg
-zim &
+#kgpg
+#zim &
 # osmo &
 # stardict &
 # gkrellm &
