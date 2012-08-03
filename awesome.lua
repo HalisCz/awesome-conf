@@ -472,8 +472,7 @@ root.keys(globalkeys)
 -- pravidla pro ruzne aplikace (v jakem tagu a na jakem screenu)
 awful.rules.rules = {
     -- All clients will match this rule.
-    -- Start windows as slave
-    { rule = { }, properties = { }, callback = awful.client.setslave },
+    { rule = { }, properties = { }, callback = awful.client.setslave }, -- Start windows as slave
     { rule = { },
       properties = { border_width = beautiful.border_width,
                      border_color = beautiful.border_normal,
@@ -509,6 +508,8 @@ awful.rules.rules = {
       properties = { tag = tags[1][6] } },
     { rule = { class = "Gajim.py" },
       properties = { tag = tags[1][5] } },
+    { rule = { class = "Vlc" },
+      properties = { tag = tags[1][6] } },
 }
 -- }}}
 
