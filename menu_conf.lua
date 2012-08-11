@@ -116,6 +116,8 @@ mymenu_burning = {
 }
 
 mymenu_configuration = {
+   { "awesome", myawesomemenu, beautiful.awesome_icon },
+   { "------------------------"},
    { "NVIDIA Settings", "nvidia-settings", homepath .. "/.config/awesome/themes/icons/apps/nvidia-settings.png" },
    { "Pozadí plochy", "nitrogen " .. homepath .. "/backgrounds/", homepath .. "/.config/awesome/themes/icons/apps/background.png" },
    { "Téma GTK", "lxappearance", homepath .. "/.config/awesome/themes/icons/apps/themes_setting.png" },
@@ -133,10 +135,7 @@ mymenu_configuration = {
    { "menu_conf.lua", "geany " .. homepath .. "/.config/awesome/menu_conf.lua", homepath .. "/.config/awesome/themes/icons/apps/geany.png" },
    { "autostart.sh", "geany " .. homepath .. "/.config/awesome/autostart.sh", homepath .. "/.config/awesome/themes/icons/apps/geany.png" },
    { "------------------------"},
-   { "Reload .Xdefaults", "xrdb -load ~/.Xdefaults", homepath .. "/.config/awesome/themes/icons/apps/reload.png" },
-   { "------------------------"},
-   { "awesome", myawesomemenu, beautiful.awesome_icon }
-   
+   { "Reload .Xdefaults", "xrdb -load ~/.Xdefaults", homepath .. "/.config/awesome/themes/icons/apps/reload.png" }
 }
 
 mymainmenu = awful.menu.new({ items = { { "Spustit", "gmrun", homepath .. "/.config/awesome/themes/icons/apps/gmrun.png" },
