@@ -483,9 +483,11 @@ awful.rules.rules = {
       properties = { floating = true } },
     { rule = { class = "Wicd-client.py" },      -- plovoucí wicd
       properties = { floating = true } },
+    { rule = { class = "openttd" },			-- openttd vždy na fullscreen	
+      properties = { fullscreen = true } },
     { rule = { class = "Firefox" }, except = { instance = "Navigator" },            -- plovoucí firefox stahování 
       properties = { floating = true } },
-    { rule = { class = "psi" },            -- plovoucí psi 
+    { rule = { class = "psi" },				-- plovoucí psi 
       properties = { floating = true,
                      tag = tags[1][5] } },
 
