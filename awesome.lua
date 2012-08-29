@@ -478,6 +478,7 @@ awful.rules.rules = {
                      border_color = beautiful.border_normal,
                      focus = true,
                      keys = clientkeys,
+					 size_hints_honor = false,				-- zarovnává okna do roviny, namísto zarovnání na zobrazení celých řádků
                      buttons = clientbuttons } },
     { rule = { class = "pinentry" },
       properties = { floating = true } },
