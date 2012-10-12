@@ -15,6 +15,21 @@ require("naughty")
 -- widget library
 require("vicious")
 
+-- Autorun programs
+autorun = true
+autorunApps =
+{
+	"setxkbmap -layout cz,us -option grp:alt_shift_toggle",
+	"urxvtd -q -f -o",
+	"conky -d -p 5",
+	"xscreensaver -no-splash",
+}
+if autorun then
+   for app = 1, #autorunApps do
+       awful.util.spawn(autorunApps[app])
+   end
+end
+
 -- {{{ Variable definitions
 -- path to home directory (cesta k domovskemu adresari uzivatele)
 homepath = os.getenv("HOME")
