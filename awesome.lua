@@ -76,7 +76,8 @@ tags.settings = {
     { name = "work1", layout = layouts[1]  },
     { name = "work2",   layout = layouts[1]  },
     { name = "web",  layout = layouts[1]  },
-    { name = "mail/im",    layout = layouts[1], mwfact = 0.30 },
+    { name = "im",    layout = layouts[1] },
+    { name = "mail",    layout = layouts[1] },
 --    { name = "grafx",     layout = layouts[11] },
     { name = "media",     layout = layouts[1] },
     { name = "office",   layout = layouts[11]  },
@@ -513,7 +514,7 @@ awful.rules.rules = {
     { rule = { class = "Firefox" },
       properties = { tag = tags[1][4] } },
     { rule = { class = "Thunderbird" },
-      properties = { tag = tags[1][5] } },
+      properties = { tag = tags[1][6] } },
     { rule = { class = "Liferea" },
       properties = { tag = tags[1][4] } },      
 	{ rule = { class = "Claws-mail" },
@@ -527,7 +528,7 @@ awful.rules.rules = {
     { rule = { class = "Gajim.py" },
       properties = { tag = tags[1][5] } },
     { rule = { class = "Vlc" },
-      properties = { tag = tags[1][6] } },
+      properties = { tag = tags[1][7] } },
 }
 -- }}}
 
