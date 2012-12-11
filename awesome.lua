@@ -360,11 +360,11 @@ globalkeys = awful.util.table.join(
 	awful.key({ modkey }, "Print", function () awful.util.spawn("scrot 'shot_%d.%m.%Y_%H.%M.%S.png' -e 'mv $f ~/shots/ &amp; gthumb ~/shots/$f'") end),
 
 	-- hlasitost
-	awful.key({ }       , "#121", function () awful.util.spawn(homepath .. "/.config/awesome/scripts/pvol.py -m", false) end),
-	awful.key({ }       , "#122", function () awful.util.spawn(homepath .. "/.config/awesome/scripts/pvol.py -c -5", false) end),
-	awful.key({ }       , "#123", function () awful.util.spawn(homepath .. "/.config/awesome/scripts/pvol.py -c 5", false) end),
-    awful.key({ modkey }, "#117", function () awful.util.spawn(homepath .. "/.config/awesome/scripts/pvol.py -p -c -5", false) end),
-    awful.key({ modkey }, "#112", function () awful.util.spawn(homepath .. "/.config/awesome/scripts/pvol.py -p -c 5", false) end),
+	--awful.key({ }       , "#121", function () awful.util.spawn(homepath .. "/.config/awesome/scripts/pvol.py -m", false) end),
+	--awful.key({ }       , "#122", function () awful.util.spawn(homepath .. "/.config/awesome/scripts/pvol.py -c -5", false) end),
+	--awful.key({ }       , "#123", function () awful.util.spawn(homepath .. "/.config/awesome/scripts/pvol.py -c 5", false) end),
+    --awful.key({ modkey }, "#117", function () awful.util.spawn(homepath .. "/.config/awesome/scripts/pvol.py -p -c -5", false) end),
+    --awful.key({ modkey }, "#112", function () awful.util.spawn(homepath .. "/.config/awesome/scripts/pvol.py -p -c 5", false) end),
 
 	-- hlasitost - multimedialni tlacitka (thinkpad r61)
 	awful.key({ }       , "#122", function () awful.util.spawn("amixer -q set Master 2- unmute") end),
