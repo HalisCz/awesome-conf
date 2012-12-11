@@ -76,7 +76,7 @@ tags.settings = {
     { name = "work1", layout = layouts[1]  },
     { name = "work2",   layout = layouts[1]  },
     { name = "web",  layout = layouts[1]  },
-    { name = "im",    layout = layouts[1] },
+    { name = "im",    layout = layouts[1], ncol = 3, nmaster = 1, mwfact = 0.2 },
     { name = "mail",    layout = layouts[1] },
 --    { name = "grafx",     layout = layouts[11] },
     { name = "media",     layout = layouts[1] },
@@ -504,9 +504,8 @@ awful.rules.rules = {
       properties = { fullscreen = true } },
     { rule = { class = "Firefox" }, except = { instance = "Navigator" },            -- plovoucí firefox stahování 
       properties = { floating = true } },
-    { rule = { class = "psi" },				-- plovoucí psi 
-      properties = { floating = true,
-                     tag = tags[1][5] } },
+    { rule = { class = "psi" },	 
+      properties = { tag = tags[1][5] } },
 
     { rule = { class = "gimp" },
       properties = { floating = true,
