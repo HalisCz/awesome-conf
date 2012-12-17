@@ -357,7 +357,7 @@ globalkeys = awful.util.table.join(
 	awful.key({ "Mod1" }, "F8", function () awful.util.spawn(terminal .. "-hold -e '" .. homepath .. "/.config/awesome/scripts/openvpn_start.sh'") end),
 	
 	-- screenshot
-	awful.key({ modkey }, "Print", function () awful.util.spawn("scrot 'shot_%d.%m.%Y_%H.%M.%S.png' -e 'mv $f ~/shots/ &amp; gthumb ~/shots/$f'") end),
+	awful.key({ modkey }, "Print", function () awful.util.spawn("scrot 'shot_%Y%m%d-%H%M%S.png' -e 'mv $f ~/shots/ &amp; gthumb ~/shots/$f'") end),
 
 	-- hlasitost
 	--awful.key({ }       , "#121", function () awful.util.spawn(homepath .. "/.config/awesome/scripts/pvol.py -m", false) end),
