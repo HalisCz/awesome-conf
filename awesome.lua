@@ -74,16 +74,15 @@ layouts =
 -- {{{ Tags
 tags = {}
 tags.settings = {
-    { name = "term",  layout = layouts[1]  },
-    { name = "work1", layout = layouts[1]  },
-    { name = "work2",   layout = layouts[1]  },
-    { name = "web",  layout = layouts[1]  },
-    { name = "im",    layout = layouts[1], ncol = 3, nmaster = 1, mwfact = 0.2 },
-    { name = "mail",    layout = layouts[1] },
---    { name = "grafx",     layout = layouts[11] },
-    { name = "media",     layout = layouts[1] },
-    { name = "office",   layout = layouts[11]  },
-    { name = "temp", layout = layouts[11]  }
+    { name = "ᚁ",  layout = layouts[1]  },
+    { name = "ᚂ", layout = layouts[1]  },
+    { name = "ᚃ",   layout = layouts[1]  },
+    { name = "ᚄ",  layout = layouts[1]  },
+    { name = "ᚅ",    layout = layouts[1], ncol = 3, nmaster = 1, mwfact = 0.2 },
+    { name = "ᚆ",    layout = layouts[1] },
+    { name = "ᚇ",     layout = layouts[1] },
+    { name = "ᚈ",   layout = layouts[11]  },
+    { name = "ᚉ", layout = layouts[11]  }
 }
 
 for s = 1, screen.count() do
