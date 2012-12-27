@@ -17,7 +17,7 @@ require("vicious")
 
 -- Autorun programs
 -- transparency throught xcompmgr
-awful.util.spawn_with_shell("xcompmgr -cF &")
+awful.util.spawn_with_shell("xcompmgr -c &")
 autorun = true
 autorunApps =
 {
