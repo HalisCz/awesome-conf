@@ -324,10 +324,10 @@ globalkeys = awful.util.table.join(
 	awful.key({ "Mod1" }, "F1", function () awful.util.spawn(terminal) end),
 	
 	-- gmrun
-	awful.key({ "Mod1" }, "F2", function () awful.util.spawn("gmrun") end),
+	--awful.key({ "Mod1" }, "F2", function () awful.util.spawn("gmrun") end),
 
 	-- dmenu
-	awful.key({ "Mod1" }, "F3", function () awful.util.spawn(homepath .. "/.config/awesome/scripts/dmenu.sh") end),
+	--awful.key({ "Mod1" }, "F3", function () awful.util.spawn(homepath .. "/.config/awesome/scripts/dmenu.sh") end),
 
 	-- vypnuti aplikace
 	awful.key({ "Mod1" }, "F4", function () if client.focus then client.focus:kill() end end),
@@ -355,7 +355,7 @@ globalkeys = awful.util.table.join(
 	
 	-- OpenVPN connect
 	-- awful.key({ "Mod1" }, "F8", function () awful.util.spawn(homepath .. "/.config/awesome/scripts/openvpn_start.sh") end),
-	awful.key({ "Mod1" }, "F8", function () awful.util.spawn(terminal .. "-hold -e '" .. homepath .. "/.config/awesome/scripts/openvpn_start.sh'") end),
+	--awful.key({ "Mod1" }, "F8", function () awful.util.spawn(terminal .. "-hold -e '" .. homepath .. "/.config/awesome/scripts/openvpn_start.sh'") end),
 	
 	-- screenshot
 	awful.key({ modkey }, "Print", function () awful.util.spawn("scrot 'shot_%Y%m%d-%H%M%S.png' -e 'mv $f ~/shots/ &amp; gthumb ~/shots/$f'") end),
@@ -390,7 +390,7 @@ globalkeys = awful.util.table.join(
 		notify_cmd("Přidané klávesové zkratky: \n", "cat " .. homepath .. "/.config/awesome/help.txt", 20)
 	end),
 
-	-- Notifikace - main info
+	-- Notifikace - disk info
 	awful.key({ modkey },          "F2",   function ()
 		notify_cmd("Volné místo", "df -hT", 10)
 	end),
