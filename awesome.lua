@@ -374,7 +374,7 @@ globalkeys = awful.util.table.join(
 	--awful.key({ modkey }, "#123", function () awful.util.spawn("amixer -q set PCM 2+ unmute") end),
 
 	-- zamknuti pc (lock)
-	awful.key({ modkey }, "e", function () awful.util.spawn("xscreensaver-command -lock") end),
+	awful.key({ }, "Pause", function () awful.util.spawn("xscreensaver-command -lock") end),
 
 	-- plovouci okno na vsechny plochy
 	awful.key({ modkey }, "s",   function () client.focus.sticky = not client.focus.sticky end),
