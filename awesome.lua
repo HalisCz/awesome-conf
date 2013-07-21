@@ -17,14 +17,13 @@ require("vicious")
 
 -- Autorun programs
 -- transparency throught xcompmgr
-awful.util.spawn_with_shell("xcompmgr -c &")
+--awful.util.spawn_with_shell("xcompmgr -c &")
 autorun = true
 autorunApps =
 {
-	"setxkbmap -layout cz,us -option grp:alt_shift_toggle",
-	"urxvtd -q -f -o",
-	"conky -d -p 5",
-	"xscreensaver -no-splash",
+	--"urxvtd -q -f -o",
+	--"conky -d -p 5",
+	--"xscreensaver -no-splash",
 }
 if autorun then
    for app = 1, #autorunApps do
