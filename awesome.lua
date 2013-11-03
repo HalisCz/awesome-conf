@@ -17,19 +17,15 @@ require("vicious")
 
 -- Autorun programs
 -- transparency throught xcompmgr
---awful.util.spawn_with_shell("xcompmgr -c &")
-autorun = true
-autorunApps =
-{
-	--"urxvtd -q -f -o",
-	--"conky -d -p 5",
-	--"xscreensaver -no-splash",
-}
-if autorun then
-   for app = 1, #autorunApps do
-       awful.util.spawn(autorunApps[app])
-   end
-end
+awful.util.spawn_with_shell("urxvtd -q -f -o")
+awful.util.spawn_with_shell("xscreensaver --no-splash")
+awful.util.spawn_with_shell("nm-applet")
+awful.util.spawn_with_shell("xcompmgr -c")
+awful.util.spawn_with_shell("dropbox")
+awful.util.spawn_with_shell("udiskie")
+awful.util.spawn_with_shell("cryptkeeper")
+awful.util.spawn_with_shell("firefox")
+awful.util.spawn_with_shell("thunderbird")
 
 -- {{{ Variable definitions
 -- path to home directory (cesta k domovskemu adresari uzivatele)
