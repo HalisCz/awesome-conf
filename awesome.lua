@@ -22,7 +22,6 @@ awful.util.spawn_with_shell("nm-applet")
 awful.util.spawn_with_shell("xcompmgr -c")
 awful.util.spawn_with_shell("dropbox")
 awful.util.spawn_with_shell("udiskie")
-awful.util.spawn_with_shell("cryptkeeper")
 awful.util.spawn_with_shell("firefox")
 awful.util.spawn_with_shell("psi")
 awful.util.spawn_with_shell("thunderbird")
@@ -507,7 +506,7 @@ awful.rules.rules = {
     { rule = { class = "gimp" },
       properties = { floating = true,
 					 tag = tags[1][6] } },
-    { rule = { class = "Firefox" },
+    { rule = { class = "Firefox" }, except = { instance = "Dialog" },
       properties = { tag = tags[1][4] } },
     { rule = { class = "Thunderbird" },
       properties = { tag = tags[1][6] } },
