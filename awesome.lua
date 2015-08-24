@@ -175,7 +175,7 @@ vicious.register(batwidget, vicious.widgets.bat, "$1$2%", 61, "BAT0")
 -- }}}
 
 -- Create a textclock widget - (datum a cas)
-mytextclock = awful.widget.textclock({ align = "right" }, "%d.%m.%Y %H:%M" )
+mytextclock = awful.widget.textclock({ align = "right" }, "%d.%m.%Y %H:%M:%S", 1 )
 
 -- Create a systray
 mysystray = widget({ type = "systray" })
