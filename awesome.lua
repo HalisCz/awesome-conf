@@ -28,7 +28,8 @@ end
 run_once("/usr/libexec/polkit-gnome-authentication-agent-1")
 run_once("urxvtd -q -f -o")
 run_once("nm-applet")
-run_once("xcompmgr -c")
+run_once("redshift-gtk -l 50:15")
+-- run_once("xcompmgr -c")
 run_once("dropbox")
 run_once("udiskie -t2")
 run_once("firefox")
@@ -501,7 +502,7 @@ awful.rules.rules = {
                      keys = clientkeys,
 					 size_hints_honor = false,				-- zarovnává okna do roviny, namísto zarovnání na zobrazení celých řádků
                      buttons = clientbuttons } },
-    { rule = { class = "pinentry" },
+    { rule = { class = "Pinentry-gtk-2" },
       properties = { floating = true } },
     { rule = { class = "Wicd-client.py" },      -- plovoucí wicd
       properties = { floating = true } },
@@ -517,7 +518,7 @@ awful.rules.rules = {
 					 tag = tags[1][6] } },
     { rule = { class = "Firefox" }, except = { instance = "Dialog" },
       properties = { tag = tags[1][4] } },
-    { rule = { class = "Thunderbird" },
+    { rule = { class = "Thunderbird" }, except = { instance = "Dialog" },
       properties = { tag = tags[1][6] } },
     { rule = { class = "Liferea" },
       properties = { tag = tags[1][4] } },      
